@@ -83,8 +83,8 @@ void test_swap_equal(void)
 void test_find_last_basic(void)
 {
     char str[] = "hello";
-    char resultPtr = find_last_char(str);
-    TEST_ASSERT_EQUAL('o', resultPtr);
+    char *resultPtr = find_last_char(str);
+    TEST_ASSERT_EQUAL('o', *resultPtr);
 }
 
 
