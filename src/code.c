@@ -54,9 +54,10 @@ int   sum_chain(Node *headPtr);
 
 void swap(int *aPtr, int *bPtr)
 {
-    // TODO
+    int c = *aPtr;
+    *aPtr = *bPtr;
+    *bPtr = c;
 }
-
 
 // ============================================================
 // find_last_char
@@ -78,7 +79,12 @@ void swap(int *aPtr, int *bPtr)
 
 char* find_last_char(char *sPtr)
 {
-    // TODO
+
+    while((*sPtr) != '\0')
+    {
+        return *(sPtr - 1);
+    }
+
     return NULL;
 }
 

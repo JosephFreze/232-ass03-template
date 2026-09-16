@@ -46,7 +46,11 @@ int   sum_chain(Node *headPtr);
 
 void test_swap_basic(void)
 {
-    // TODO
+    int a = 2, b = 4;
+    int resA = b, resB = a;
+    swap(&a, &b);
+    TEST_ASSERT_EQUAL(resA, a);
+    TEST_ASSERT_EQUAL(resB, b);
 }
 
 
@@ -60,7 +64,11 @@ void test_swap_basic(void)
 
 void test_swap_equal(void)
 {
-    // TODO
+    int a = 3, b = 3;
+    int resA = b, resB = a;
+    swap(&a, &b);
+    TEST_ASSERT_EQUAL(resA, a);
+    TEST_ASSERT_EQUAL(resB, b);
 }
 
 
@@ -74,7 +82,8 @@ void test_swap_equal(void)
 
 void test_find_last_basic(void)
 {
-    // TODO
+    char str[] = "hello";
+    char *resultPtr = find_last_char(str);
 }
 
 
@@ -88,7 +97,8 @@ void test_find_last_basic(void)
 
 void test_find_last_single(void)
 {
-    // TODO
+    char str[] = "h";
+    char *resultPtr = find_last_char(str);
 }
 
 
